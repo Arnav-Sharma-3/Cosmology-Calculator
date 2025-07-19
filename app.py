@@ -87,14 +87,24 @@ if st.button("Calculate"):
     results = run_cosmology_calculator(z, H0, WM, WV, verbose)
 
     if verbose:
-        st.markdown("### Results:")
-        st.write(f"**Age of Universe now:** {results['age_Gyr']:.2f} Gyr")
-        st.write(f"**Age at redshift z:** {results['zage_Gyr']:.2f} Gyr")
-        st.write(f"**Light travel time:** {results['DTT_Gyr']:.2f} Gyr")
-        st.write(f"**Comoving radial distance:** {results['DCMR_Mpc']:.2f} Mpc")
-        st.write(f"**Angular diameter distance D_A:** {results['DA_Mpc']:.2f} Mpc ({results['DA_Gyr']:.2f} Gly)")
-        st.write(f"**Scale:** {results['kpc_DA']:.2f} kpc/arcsec")
-        st.write(f"**Luminosity distance D_L:** {results['DL_Mpc']:.2f} Mpc ({results['DL_Gyr']:.2f} Gly)")
-        st.write(f"**Distance modulus (m - M):** {results['distance_modulus']:.2f}")
+        st.markdown("## 🔭 Cosmology Results")
+
+        col1, col2, col3 = st.columns(3)
+        col1.metric("Age Now (Gyr)", f"{results['age_Gyr']:.2f}")
+        col2.metric("Age at z (Gyr)", f"{results['zage_Gyr']:.2f}")
+        col3.metric("Light Travel Time (Gyr)", f"{results['DTT_Gyr']:.2f}")
+
+        col4, col5, col6 = st.columns(3)
+        col4.metric("Comoving Distance (Mpc)", f"{results['DCMR_Mpc']:.2f}")
+        col5.metric("Angular Diameter D_A (Mpc)", f"{results['DA_Mpc']:.2f}")
+        col6.metric("D_A (Gly)", f"{results['DA_Gyr']:.2f}")
+
+        col7, col8, col9 = st.columns(3)
+        col7.metric("Scale (kpc/arcsec)", f"{results['kpc_DA']:.2f}")
+        col8.metric("Luminosity Distance (Mpc)", f"{results['DL_Mpc']:.2f}")
+        col9.metric("D_L (Gly)", f"{results['DL_Gyr']:.2f}")
+
+        st.metric("Distance Modulus (m - M)", f"{results['distance_modulus']:.2f}")
+
     else:
         st.write(f"{results['zage_Gyr']:.2f}, {results['DCMR_Mpc']:.2f}, {results['kpc_DA']:.2f}, {results['distance_modulus']:.2f}")
