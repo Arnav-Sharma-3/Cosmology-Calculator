@@ -77,7 +77,7 @@ def run_cosmology_calculator(z, H0, WM, WV, verbose):
 
 st.title("Cosmology Calculator 🌌")
 
-z = st.slider("Redshift (z)", 0.01, 20.0, 3.0, step=0.01)
+z = st.slider("Redshift (z)", 0.001, 20.000, 3.0, step=0.001)
 H0 = st.number_input("Hubble Constant (H₀)", value=70.0)
 WM = st.slider("Ω Matter (Ωₘ)", 0.0, 1.5, 0.3)
 WV = st.slider("Ω Vacuum / Lambda (Ω_Λ)", 0.0, 1.5, 0.7)
