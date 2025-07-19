@@ -108,3 +108,9 @@ if st.button("Calculate"):
 
     else:
         st.write(f"{results['zage_Gyr']:.2f}, {results['DCMR_Mpc']:.2f}, {results['kpc_DA']:.2f}, {results['distance_modulus']:.2f}")
+
+st.markdown("---")
+st.markdown(
+    "📌 This calculator is based on [Ned Wright's Cosmology Calculator](https://www.astro.ucla.edu/~wright/CC.python).",
+    unsafe_allow_html=True
+)
