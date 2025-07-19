@@ -111,7 +111,7 @@ if st.button("Calculate"):
 
 st.markdown("---")
 st.markdown(
-    "📌 This calculator is based on [James Schombert"s python version of the Ned Wright's Cosmology Calculator](https://www.astro.ucla.edu/~wright/CC.python).",
+    "📌 This calculator is based on [James Schombert's python version of the Ned Wright's Cosmology Calculator](https://www.astro.ucla.edu/~wright/CC.python).",
     unsafe_allow_html=True
 )
 st.markdown(
