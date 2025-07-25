@@ -1,8 +1,8 @@
 import streamlit as st
 from math import *
 st.set_page_config(
-    page_title="Cosmic Calculator"
-    page_icon="🖩",  # You can use an emoji or a URL to an image
+    page_title="Cosmic Calculator",
+    page_icon="🖩",  
 )
 def run_cosmology_calculator(z, H0, WM, WV, verbose):
     h = H0 / 100.
