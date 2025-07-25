@@ -5,7 +5,7 @@ st.set_page_config(
     page_icon="🖩",  
 )
 def run_cosmology_calculator(z, H0, WM, WV, verbose):
-    h = H0 / 100.
+    h = H0 / 100
     WR = 4.165E-5 / (h * h)
     WK = 1 - WM - WR - WV
     az = 1.0 / (1.0 + z)
