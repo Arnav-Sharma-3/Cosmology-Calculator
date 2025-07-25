@@ -1,7 +1,7 @@
 import streamlit as st
 from math import *
 st.set_page_config(
-    page_title="Cosmic Calculator",
+    page_title="Cosmology Calculator",
     page_icon="🖩",  
 )
 def run_cosmology_calculator(z, H0, WM, WV, verbose):
@@ -78,7 +78,7 @@ def run_cosmology_calculator(z, H0, WM, WV, verbose):
 # STREAMLIT APP INTERFACE
 # ---------------------------
 
-st.title("Cosmology Calculator 🌌")
+st.title("Cosmology Calculator 🖩")
 
 z = st.slider("Redshift (z)", 0.001, 20.0, 3.0, step=0.001, format="%.3f")
 H0 = st.number_input("Hubble Constant (H₀)", value=70.0)
