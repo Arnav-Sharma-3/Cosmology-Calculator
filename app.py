@@ -84,7 +84,7 @@ z = st.slider("Redshift (z)", 0.001, 20.0, 3.0, step=0.001, format="%.3f")
 H0 = st.number_input("Hubble Constant (H₀)", value=69.6)
 WM = st.slider("Ω Matter (Ωₘ)", 0.001, 1.500, 0.286, format="%.3f")
 WV = st.slider("Ω Vacuum / Lambda (Ω_Λ)", 0.001, 1.500, 0.714, format="%.3f")
-verbose = st.checkbox("Verbose Output", value=True, format="%.3f")
+verbose = st.checkbox("Verbose Output", value=True)
 
 if st.button("Calculate"):
     results = run_cosmology_calculator(z, H0, WM, WV, verbose)
