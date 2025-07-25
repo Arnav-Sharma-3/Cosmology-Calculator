@@ -1,12 +1,11 @@
-st.set_page_config(
-    page_title="Cosmology Calculator",  # or any name you like
-    page_icon="🌌"
-)
 import streamlit as st
 from math import *
+import streamlit as st
+
 st.set_page_config(
-    page_title="Cosmology Calculator",
-    page_icon="🖩",  
+    page_title="Cosmology Calculator 🌌",
+    page_icon="🌌",  # Or use any emoji/icon URL you like
+    layout="centered"  # Optional: "wide" or "centered"
 )
 def run_cosmology_calculator(z, H0, WM, WV, verbose):
     h = H0 / 100
