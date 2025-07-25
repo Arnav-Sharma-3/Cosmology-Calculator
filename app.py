@@ -1,3 +1,7 @@
+st.set_page_config(
+    page_title="Cosmology Calculator",  # or any name you like
+    page_icon="🌌"
+)
 import streamlit as st
 from math import *
 st.set_page_config(
