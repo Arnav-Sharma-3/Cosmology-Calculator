@@ -24,9 +24,9 @@ An interactive Streamlit web app that allows users to calculate cosmological dis
 
 ---
 
-## 🚀 Run Locally
+ 📌 This calculator is based on [James Schombert's python version of the Ned Wright's Cosmology Calculator](https://www.astro.ucla.edu/~wright/CC.python).
+    unsafe_allow_html=True
 
-1. Clone this repo:
-   ```bash
-   git clone https://github.com/your-username/cosmology-calculator.git
-   cd cosmology-calculator
+  "📖 Reference: Wright, E. L. (2006). A Cosmology Calculator for the World Wide Web. *Publications of the Astronomical Society of the Pacific*, 118(850), 1711–1715. [doi:10.1086/510102](https://doi.org/10.1086/510102)",
+    unsafe_allow_html=True
+
