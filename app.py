@@ -125,7 +125,6 @@ st.markdown(
     "📖 Reference: Wright, E. L. (2006). A Cosmology Calculator for the World Wide Web. *Publications of the Astronomical Society of the Pacific*, 118(850), 1711–1715. [doi:10.1086/510102](https://doi.org/10.1086/510102)",
     unsafe_allow_html=True
 )
-)
 st.markdown(
     """
     <hr style="margin-top: 3rem; margin-bottom: 1rem;">
